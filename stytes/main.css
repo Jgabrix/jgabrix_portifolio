@@ -1,0 +1,136 @@
+.apresentacao {
+    color: var(--cor-branco);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 6% 19%;
+    gap: 82px;
+}
+
+.apresentacao-sobremim {
+    align-items: center;
+}
+
+
+.apresentacao__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.sobremim-container {
+    align-items: start;
+    width: 50%;
+}
+
+.apresentacao__titulo {
+    font-family: var(--font-KronaOne);
+    font-size: 2rem;
+}
+
+.negrito-titulo {
+    color: var(--cor-azul-marinho);
+}
+
+.apresentacao__texto {
+    font-family: var(--font-Montserrat);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.apresentacao__subtitulo {
+    font-family: var(--font-KronaOne);
+    font-size: 1.3rem;
+}
+
+.apresentacao__link {
+    width: 50%;
+    padding: 3% 6%;
+    border: solid 1px var(--cor-azul-marinho);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    font-family: var(--font-Montserrat);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.apresentacao__imagem {
+    width: 40%;
+    
+}
+
+
+.apresentacao__link:hover {
+    background-color: var(--cor-link_interativo);
+}
+
+
+@media screen and (max-width: 1772px) {
+    .apresentacao__imagem-home {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .apresentacao__imagem-home {
+        width: 60%;
+        margin: auto;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .apresentacao__titulo {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .apresentacao {
+        margin: 19% 8%;
+    }
+
+    .apresentacao__imagem-home {
+        width: 70%;
+    }
+
+    .apresentacao__imagem {
+        width: 80%;
+    }
+
+    .apresentacao__titulo {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao__texto {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__container {
+        width: 80%;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__link {
+        font-size: 1.15rem;
+        width: 55%;
+    }
+
+}
